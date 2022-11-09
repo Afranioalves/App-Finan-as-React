@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 
 import * as C from './styles'
 
-const Form = () => {
+const Form = ({ hadleAdd }) => {
   const [desc, setDesc] = useState('')
   const [amount, setAmount] = useState('')
   const [isExpense, setExpense] = useState('')
+
+  const genereteID = () => Math.round(Math.random() * 1000);
 
   const handleSave = () => {
     if (!desc || !amount) {
@@ -14,7 +16,19 @@ const Form = () => {
       alert('O valor tem que set possitivo!')
       return
     }
-  }
+
+    const transaction = {
+      id: genereteID(),
+      desc: desc,
+      amount: amount,
+      expense: isExpense,
+    };
+
+    hadleAdd(transaction);
+
+    setDesc("");
+    setAmount("");
+  };
 
   return (
     <>
