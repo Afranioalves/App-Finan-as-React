@@ -1,17 +1,18 @@
 import React from "react";
+import Form from "./Components/Form/index";
 import Header from "./Components/Header";
 import Resume from "./Components/Resume";
-import ResumeItem from "./Components/ResumeItem";
 
-import Global from './Styles/Global';
+
+import GlobalStyle from './Styles/Global';
 
 function App() {
   return (
     <>
     <Header />
     <Resume />
-    <ResumeItem />
-    <Global />
+    <Form />
+    <GlobalStyle />
     </>
   );
 }
