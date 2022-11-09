@@ -11,9 +11,9 @@ import {
 const Resume = () => {
   return (
     <C.Container>
-      <ResumeItem title="Entradas" Icon={FaRegArrowAltCircleUp} value="1000"/>
-      <ResumeItem title="Saidas" Icon={FaRegArrowAltCircleDown} value="1000"/>
-      <ResumeItem title="Total" Icon={FaDollarSign} value="1000"/>
+      <ResumeItem title="Incoming" Icon={FaRegArrowAltCircleUp} value="1000"/>
+      <ResumeItem title="Outputs" Icon={FaRegArrowAltCircleDown} value="1000"/>
+      <ResumeItem title="Totals" Icon={FaDollarSign} value="1000"/>
     </C.Container>
   )
 }

@@ -6,7 +6,7 @@ const Header = () => {
     <div>
       <C.Container>
         <C.Header>
-          <C.Title>Controle Financeiro</C.Title>
+          <C.Title>Financial Management</C.Title>
         </C.Header>
       </C.Container>
     </div>

@@ -34,23 +34,23 @@ const Form = () => {
         </C.InputContent>
 
         <C.RadioGroup>
-            <C.Input
+          <C.Input
             type="radio"
             id="rIncome"
             defaultChecked
             name="group1"
             onChange={() => setExpense(!isExpense)}
-            />
-            <C.Label htmlFor="rIncome">Input</C.Label>
-            
-            <C.Input
+          />
+          <C.Label htmlFor="rIncome">Incoming</C.Label>
+
+          <C.Input
             type="radio"
             id="rExpenses"
             defaultChecked
             name="group1"
             onChange={() => setExpense(!isExpense)}
-            />
-            <C.Label htmlFor="rExpenses">Exit</C.Label>
+          />
+          <C.Label htmlFor="rExpenses">Outputs</C.Label>
         </C.RadioGroup>
         <C.Button onClick={handleSave}>Submit</C.Button>
       </C.Container>
