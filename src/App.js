@@ -48,7 +48,7 @@ function App() {
     <>
     <Header />
     <Resume income={income} expense={expense} total={total} />
-    <Form hadleAdd={hadleAdd}/>
+    <Form hadleAdd={hadleAdd} transactionsList={transactionsList} setTransactionsList={setTransactionsList} />
     <GlobalStyle />
     </>
   );

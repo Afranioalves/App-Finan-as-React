@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import Grid from '../Grid'
 
 import * as C from './styles'
 
-const Form = ({ hadleAdd }) => {
+const Form = ({ hadleAdd, transactionsList, setTransactionsList }) => {
   const [desc, setDesc] = useState('')
   const [amount, setAmount] = useState('')
   const [isExpense, setExpense] = useState('')
@@ -68,6 +69,7 @@ const Form = ({ hadleAdd }) => {
         </C.RadioGroup>
         <C.Button onClick={handleSave}>Submit</C.Button>
       </C.Container>
+      <Grid itens={transactionsList} setItens={setTransactionsList} />
     </>
   )
 }
