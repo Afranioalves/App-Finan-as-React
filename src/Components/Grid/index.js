@@ -31,4 +31,4 @@ const Grid = ({ itens, setItens}) => {
     )
 }
 
-export default Grid
+export default Grid;

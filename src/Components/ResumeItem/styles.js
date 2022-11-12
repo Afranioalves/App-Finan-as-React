@@ -24,7 +24,7 @@ export const Container = styled.div`
     display: none;
   }
 }
-`
+`;
 
 export const Header = styled.header`
     display: flex;
@@ -38,13 +38,13 @@ export const Header = styled.header`
         width: 25px;
         height: 25px;
     }
-`
+`;
 
 export const HeaderTitle = styled.p`
   font-size: 20px;
-`
+`;
 
 export const Total = styled.span`
   font-size: 30px;
   font-weight: bold;
-`
+`;

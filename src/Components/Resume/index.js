@@ -1,6 +1,6 @@
-import React from 'react'
-import ResumeItem from '../ResumeItem'
-import * as C from './style'
+import React from 'react';
+import ResumeItem from '../ResumeItem';
+import * as C from './style';
 
 import {
   FaRegArrowAltCircleUp,
@@ -8,7 +8,7 @@ import {
   FaDollarSign,
 } from "react-icons/fa";
 
-const Resume = ({ income, expense, total}) => {
+const Resume = ({ income, expense, total }) => {
   return (
     <C.Container>
       <ResumeItem title="Incoming" Icon={FaRegArrowAltCircleUp} value={income}/>
@@ -18,4 +18,4 @@ const Resume = ({ income, expense, total}) => {
   )
 }
 
-export default Resume
+export default Resume;

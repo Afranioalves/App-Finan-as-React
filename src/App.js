@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect } from "react";
 import Form from "./Components/Form/index";
 import Header from "./Components/Header";
 import Resume from "./Components/Resume";
@@ -7,7 +7,7 @@ import Resume from "./Components/Resume";
 import GlobalStyle from './Styles/Global';
 
 
-function App() {
+const App = () => {
   const data = localStorage.getItem("transactions");
   const [transactionsList, setTransactionsList] = useState(
     data ? JSON.parse(data) : []
@@ -26,8 +26,8 @@ function App() {
     .filter((item) => !item.expense)
     .map((transaction) => Number(transaction.amount));
 
-    const expense = amountExpense.reduce(( acc, cur) => acc + cur, 0).tofixed(2);
-    const income = amountIncome.reduce(( acc, cur) => acc + cur, 0).tofixed(2);
+    const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).tofixed(2);
+    const income = amountIncome.reduce((acc, cur) => acc + cur, 0).tofixed(2);
 
     const total = Math.abs(income - expense).toFixed(2);
 

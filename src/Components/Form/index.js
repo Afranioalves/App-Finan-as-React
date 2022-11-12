@@ -1,21 +1,22 @@
-import React, { useState } from 'react'
-import Grid from '../Grid'
+import React, { useState } from 'react';
+import Grid from '../Grid';
 
-import * as C from './styles'
+import * as C from './styles';
 
 const Form = ({ hadleAdd, transactionsList, setTransactionsList }) => {
-  const [desc, setDesc] = useState('')
-  const [amount, setAmount] = useState('')
-  const [isExpense, setExpense] = useState('')
+  const [desc, setDesc] = useState("");
+  const [amount, setAmount] = useState("");
+  const [isExpense, setExpense] = useState(false);
 
   const genereteID = () => Math.round(Math.random() * 1000);
 
   const handleSave = () => {
     if (!desc || !amount) {
-      return
+      alert("Informe a descrição e o valor!");
+      return;
     } else if (amount < 1) {
-      alert('O valor tem que set possitivo!')
-      return
+      alert("O valor tem que set possitivo!");
+      return;
     }
 
     const transaction = {
@@ -70,8 +71,8 @@ const Form = ({ hadleAdd, transactionsList, setTransactionsList }) => {
         <C.Button onClick={handleSave}>Submit</C.Button>
       </C.Container>
       <Grid itens={transactionsList} setItens={setTransactionsList} />
-    </>
+      </>
   )
 }
 
-export default Form
+export default Form;
