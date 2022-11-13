@@ -26,8 +26,6 @@ const App = () => {
     .filter((item) => !item.expense)
     .map((transaction) => Number(transaction.amount));
 
-    const expense = amountExpense.reduce((acc, cur) => acc + cur, 0).tofixed(0);
-    const income = amountIncome.reduce((acc, cur) => acc + cur, 0).tofixed(0);
 
     const total = Math.abs(income - expense).toFixed(2);
 
