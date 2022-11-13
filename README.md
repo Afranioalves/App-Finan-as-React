@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-https://wmazoni-sds1.netlify.app
+https://app-financas.netlify.app/
 
 Big Game Survey é uma aplicação full stack web e mobile construída durante a 1ª edição da **Semana DevSuperior** (#sds1), evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
 
