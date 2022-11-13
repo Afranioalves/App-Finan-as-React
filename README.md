@@ -14,7 +14,7 @@ A aplicação consiste em adicionar o valores de entradas e saidas usando LocalS
 
 
 ## Front end
-- HTML / CSS / JS / TypeScript
+- HTML / CSS / JS
 - ReactJS
 - React Icons
 - Styles Components
